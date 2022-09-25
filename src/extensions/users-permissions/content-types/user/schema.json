@@ -63,12 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "comments": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "users"
-    },
     "posts": {
       "type": "relation",
       "relation": "oneToMany",
