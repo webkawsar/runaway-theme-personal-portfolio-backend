@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "twitter": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "google_plus": {
+      "type": "string",
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "linked_in": {
+      "type": "string",
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "instagram": {
+      "type": "string",
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "profile"
+    }
+  }
+}
