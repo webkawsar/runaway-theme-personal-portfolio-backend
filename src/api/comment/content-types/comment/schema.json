@@ -33,6 +33,12 @@
       "required": true,
       "maxLength": 30,
       "minLength": 3
+    },
+    "replied_comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::replied-comment.replied-comment",
+      "mappedBy": "comment"
     }
   }
 }

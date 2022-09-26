@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replied_comments",
+  "info": {
+    "singularName": "replied-comment",
+    "pluralName": "replied-comments",
+    "displayName": "RepliedComments"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "replied_comments"
+    }
+  }
+}

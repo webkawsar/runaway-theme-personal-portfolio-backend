@@ -32,12 +32,6 @@
         "images"
       ]
     },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::like.like",
-      "mappedBy": "post"
-    },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
