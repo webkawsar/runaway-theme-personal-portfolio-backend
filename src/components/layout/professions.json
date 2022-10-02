@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_professions",
+  "info": {
+    "displayName": "Professions",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 3,
+      "unique": false
+    }
+  }
+}

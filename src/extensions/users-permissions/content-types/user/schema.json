@@ -68,6 +68,11 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "author"
+    },
+    "profile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.my-info"
     }
   }
 }

@@ -1,0 +1,86 @@
+{
+  "collectionName": "components_layout_my_infos",
+  "info": {
+    "displayName": "MyInfo",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "professions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.professions"
+    },
+    "bio": {
+      "type": "text",
+      "required": true
+    },
+    "cv_url": {
+      "type": "string",
+      "required": true
+    },
+    "aboutIntro": {
+      "type": "text",
+      "required": true
+    },
+    "aboutIntroDetails": {
+      "type": "text",
+      "required": true
+    },
+    "dob": {
+      "type": "date",
+      "required": true
+    },
+    "blood_group": {
+      "type": "enumeration",
+      "enum": [
+        "AB (positive)",
+        "AB (negative)",
+        "A (positive)",
+        "A (negative)",
+        "B (positive)",
+        "B (negative)",
+        "O (positive)",
+        "O (negative)"
+      ],
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "introVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "roundImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "introImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
