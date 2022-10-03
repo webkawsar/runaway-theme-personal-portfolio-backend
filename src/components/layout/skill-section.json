@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_skill_sections",
+  "info": {
+    "displayName": "SkillSection",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "introDetails": {
+      "type": "richtext",
+      "required": true
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.technical-skills"
+    }
+  }
+}

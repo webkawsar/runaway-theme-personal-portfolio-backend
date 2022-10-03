@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_layout_technical_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "assistive-listening-systems",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "percent": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

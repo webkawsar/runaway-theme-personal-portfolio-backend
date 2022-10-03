@@ -1,29 +1,12 @@
 {
   "collectionName": "components_layout_my_infos",
   "info": {
-    "displayName": "MyInfo",
+    "displayName": "AboutSection",
     "icon": "address-book",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "fullName": {
-      "type": "string",
-      "required": true
-    },
-    "professions": {
-      "type": "component",
-      "repeatable": true,
-      "component": "layout.professions"
-    },
-    "bio": {
-      "type": "text",
-      "required": true
-    },
-    "cv_url": {
-      "type": "string",
-      "required": true
-    },
     "aboutIntro": {
       "type": "text",
       "required": true
@@ -67,20 +50,17 @@
       "required": true
     },
     "roundImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "introImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_layout_intros",
+  "info": {
+    "displayName": "Intro",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "professions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.professions"
+    },
+    "bio": {
+      "type": "text",
+      "required": true
+    },
+    "cv_url": {
+      "type": "string",
+      "required": true
+    },
+    "introImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

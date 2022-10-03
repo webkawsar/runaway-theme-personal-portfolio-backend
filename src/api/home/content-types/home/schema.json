@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.intro"
+    },
+    "aboutSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.my-info"
+    },
+    "skillSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.skill-section"
+    }
+  }
+}
