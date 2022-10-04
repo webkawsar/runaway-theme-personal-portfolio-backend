@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_countups",
+  "info": {
+    "displayName": "Countup",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}

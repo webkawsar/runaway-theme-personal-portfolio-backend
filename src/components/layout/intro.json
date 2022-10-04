@@ -1,7 +1,7 @@
 {
   "collectionName": "components_layout_intros",
   "info": {
-    "displayName": "Intro",
+    "displayName": "IntroSection",
     "icon": "ad",
     "description": ""
   },
@@ -25,12 +25,12 @@
       "required": true
     },
     "introImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

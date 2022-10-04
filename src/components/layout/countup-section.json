@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_countup_sections",
+  "info": {
+    "displayName": "CountupSection",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "factCounts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.countup",
+      "required": true
+    }
+  }
+}

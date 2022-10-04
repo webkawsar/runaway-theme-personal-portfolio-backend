@@ -26,6 +26,18 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.skill-section"
+    },
+    "countupSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.countup-section",
+      "required": true
+    },
+    "serviceSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.service-section",
+      "required": true
     }
   }
 }

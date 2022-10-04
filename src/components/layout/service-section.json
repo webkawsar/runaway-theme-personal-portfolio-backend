@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_layout_service_sections",
+  "info": {
+    "displayName": "ServiceSection",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "serviceIntro": {
+      "type": "text",
+      "required": true
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.service",
+      "required": true
+    }
+  }
+}
