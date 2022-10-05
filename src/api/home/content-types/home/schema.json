@@ -43,6 +43,12 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.project-section"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.testimonial-section",
+      "required": true
     }
   }
 }

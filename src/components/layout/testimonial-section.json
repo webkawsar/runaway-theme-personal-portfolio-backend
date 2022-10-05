@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_testimonial_sections",
+  "info": {
+    "displayName": "TestimonialSection",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "testimonialIntro": {
+      "type": "text",
+      "required": true
+    },
+    "clientsFeedback": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.feedback",
+      "required": true
+    }
+  }
+}

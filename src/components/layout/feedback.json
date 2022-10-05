@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_layout_feedbacks",
+  "info": {
+    "displayName": "Feedback",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "message": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
