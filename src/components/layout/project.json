@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_projects",
+  "info": {
+    "displayName": "Project",
+    "icon": "bicycle"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

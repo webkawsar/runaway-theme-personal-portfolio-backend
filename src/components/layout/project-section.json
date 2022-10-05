@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_project_sections",
+  "info": {
+    "displayName": "ProjectSection",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.project",
+      "required": true
+    }
+  }
+}
