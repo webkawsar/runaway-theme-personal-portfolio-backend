@@ -1,15 +1,25 @@
 {
   "collectionName": "components_layout_project_sections",
   "info": {
-    "displayName": "ProjectSection",
-    "icon": "bullhorn"
+    "displayName": "PortfolioSection",
+    "icon": "bullhorn",
+    "description": ""
   },
   "options": {},
   "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.menu",
+      "required": true
+    },
     "projects": {
       "type": "component",
       "repeatable": true,
-      "component": "layout.project",
+      "component": "layout.project"
+    },
+    "portfolioIntro": {
+      "type": "text",
       "required": true
     }
   }

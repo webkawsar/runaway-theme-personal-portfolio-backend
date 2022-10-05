@@ -39,11 +39,10 @@
       "component": "layout.service-section",
       "required": true
     },
-    "projectsSection": {
+    "portfolioSection": {
       "type": "component",
       "repeatable": false,
-      "component": "layout.project-section",
-      "required": true
+      "component": "layout.project-section"
     }
   }
 }

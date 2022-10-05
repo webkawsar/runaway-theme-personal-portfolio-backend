@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_menus",
+  "info": {
+    "displayName": "Menu",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "keyword": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

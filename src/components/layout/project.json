@@ -2,16 +2,21 @@
   "collectionName": "components_layout_projects",
   "info": {
     "displayName": "Project",
-    "icon": "bicycle"
+    "icon": "bicycle",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tags": {
+      "type": "string",
       "required": true
     }
   }
