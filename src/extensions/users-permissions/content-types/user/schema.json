@@ -69,10 +69,13 @@
       "target": "api::post.post",
       "mappedBy": "author"
     },
-    "profile": {
-      "type": "component",
-      "repeatable": false,
-      "component": "layout.my-info"
+    "profileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

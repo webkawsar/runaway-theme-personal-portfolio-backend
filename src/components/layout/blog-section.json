@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_layout_blog_sections",
+  "info": {
+    "displayName": "BlogSection",
+    "icon": "carrot",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blogIntro": {
+      "type": "text",
+      "required": true
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    }
+  }
+}

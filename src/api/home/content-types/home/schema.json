@@ -49,6 +49,12 @@
       "repeatable": false,
       "component": "layout.testimonial-section",
       "required": true
+    },
+    "blogSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.blog-section",
+      "required": true
     }
   }
 }
