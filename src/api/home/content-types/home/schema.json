@@ -55,6 +55,12 @@
       "repeatable": false,
       "component": "layout.blog-section",
       "required": true
+    },
+    "contactSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.contact-section",
+      "required": true
     }
   }
 }

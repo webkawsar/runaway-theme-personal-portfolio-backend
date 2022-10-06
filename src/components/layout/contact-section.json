@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_contact_sections",
+  "info": {
+    "displayName": "ContactSection",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contactIntro": {
+      "type": "text",
+      "required": true
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.social",
+      "required": true
+    }
+  }
+}
