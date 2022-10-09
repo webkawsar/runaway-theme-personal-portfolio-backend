@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "statics",
+  "info": {
+    "singularName": "static",
+    "pluralName": "statics",
+    "displayName": "Static"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.social",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

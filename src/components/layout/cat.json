@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_cats",
+  "info": {
+    "displayName": "Cat",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

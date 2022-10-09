@@ -70,11 +70,17 @@
       "mappedBy": "author"
     },
     "profileImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.social",
       "required": true
     }
   }
