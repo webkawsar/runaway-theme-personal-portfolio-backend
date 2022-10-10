@@ -76,12 +76,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "socials": {
-      "type": "component",
-      "repeatable": true,
-      "component": "layout.social",
-      "required": true
     }
   }
 }
