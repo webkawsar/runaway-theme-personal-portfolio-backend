@@ -13,16 +13,15 @@ module.exports = createCoreController('api::category.category', ({strapi}) => {
 
             const {query: {pagination: {page, pageSize}, populate } } = ctx;
             const {id: slug} = ctx.params;
-            const categories = await strapi.entityService.findMany('api::category.category', {
-                populate: [...populate],
-                filters: { slug },
-                limit: 1
-              });
+            
+            const category = await strapi.db.query('api::category.category').findOne({
+                where : { slug },
+                populate: [...populate]
+            });
 
-            if(!categories) return ctx.notFound('Posts is not found');
+            if(!category) return ctx.notFound('Category is not found');
             
             // created pagination system
-            const category = categories[0];
             const posts = category.posts;
             const pageNumber = page ? +page : 1;
             const postsPerPage = pageSize ? pageSize : process.env.CATEGORY_POSTS_PER_PAGE;
