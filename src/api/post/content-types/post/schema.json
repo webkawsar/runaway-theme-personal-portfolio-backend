@@ -44,12 +44,6 @@
       "target": "api::comment.comment",
       "mappedBy": "post"
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "posts"
-    },
     "tag": {
       "type": "relation",
       "relation": "manyToOne",
