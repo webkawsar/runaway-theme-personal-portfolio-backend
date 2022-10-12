@@ -23,7 +23,7 @@ module.exports = createCoreController('api::tag.tag', ({strapi}) => {
             if(!tag) return ctx.notFound('Tag is not found');
             
             // created pagination system
-            const posts = tag.posts;
+            const posts = tag.blogs;
             const pageNumber = page ? +page : 1;
             const postsPerPage = pageSize ? pageSize : process.env.CATEGORY_POSTS_PER_PAGE;
             const totalPosts = posts.length;
@@ -33,7 +33,7 @@ module.exports = createCoreController('api::tag.tag', ({strapi}) => {
 
             const response = {
                 ...tag,
-                posts: paginatedPosts,
+                blogs: paginatedPosts,
                 pagination: {
                     currentPage: pageNumber,
                     previousPage: pageNumber - 1,

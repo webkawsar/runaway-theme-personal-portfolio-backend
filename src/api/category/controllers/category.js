@@ -22,11 +22,11 @@ module.exports = createCoreController('api::category.category', ({strapi}) => {
             if(!category) return ctx.notFound('Category is not found');
             
             // created pagination system
-            const posts = category.posts;
+            const blogs = category.blogs;
             const pageNumber = page ? +page : 1;
             const postsPerPage = pageSize ? pageSize : process.env.CATEGORY_POSTS_PER_PAGE;
-            const totalPosts = posts.length;
-            const sortedPosts = posts.sort(function(post1, post2){return post2.id - post1.id});
+            const totalPosts = blogs.length;
+            const sortedPosts = blogs.sort(function(post1, post2){return post2.id - post1.id});
             const paginatedPosts = sortedPosts.splice((pageNumber - 1) * postsPerPage, postsPerPage);
             
 
