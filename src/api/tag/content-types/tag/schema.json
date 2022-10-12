@@ -19,16 +19,16 @@
       "maxLength": 30,
       "minLength": 2
     },
-    "posts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post",
-      "mappedBy": "tag"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "inversedBy": "tags"
     }
   }
 }

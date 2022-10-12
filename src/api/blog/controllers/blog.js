@@ -1,12 +1,12 @@
 'use strict';
 
 /**
- * post controller
+ * blog controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::post.post', ({strapi}) => {
+module.exports = createCoreController('api::blog.blog', ({strapi}) => {
 
     return {
         async findOne(ctx) {
@@ -14,7 +14,7 @@ module.exports = createCoreController('api::post.post', ({strapi}) => {
             const {query: { populate } } = ctx;
             const {id: slug} = ctx.params;
             
-            const post = await strapi.db.query('api::post.post').findOne({
+            const post = await strapi.db.query('api::blog.blog').findOne({
                 where : { slug },
                 populate: [...populate]
             });

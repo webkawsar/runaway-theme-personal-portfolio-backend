@@ -63,12 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "posts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post",
-      "mappedBy": "author"
-    },
     "profileImage": {
       "type": "media",
       "multiple": false,
@@ -76,6 +70,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "author"
     }
   }
 }

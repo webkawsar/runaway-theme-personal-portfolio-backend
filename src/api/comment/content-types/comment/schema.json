@@ -18,12 +18,6 @@
       "minLength": 2,
       "maxLength": 1000
     },
-    "post": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::post.post",
-      "inversedBy": "comments"
-    },
     "email": {
       "type": "email",
       "required": true
@@ -39,6 +33,12 @@
       "relation": "oneToMany",
       "target": "api::replied-comment.replied-comment",
       "mappedBy": "comment"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog.blog",
+      "inversedBy": "comments"
     }
   }
 }

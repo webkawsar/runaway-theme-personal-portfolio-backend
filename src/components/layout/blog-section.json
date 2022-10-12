@@ -11,10 +11,10 @@
       "type": "text",
       "required": true
     },
-    "posts": {
+    "blogs": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::post.post"
+      "target": "api::blog.blog"
     }
   }
 }
