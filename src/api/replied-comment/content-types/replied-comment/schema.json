@@ -4,13 +4,25 @@
   "info": {
     "singularName": "replied-comment",
     "pluralName": "replied-comments",
-    "displayName": "RepliedComments"
+    "displayName": "RepliedComment"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
     "comment": {
       "type": "relation",
       "relation": "manyToOne",

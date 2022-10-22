@@ -28,17 +28,17 @@
       "maxLength": 30,
       "minLength": 3
     },
-    "replied_comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::replied-comment.replied-comment",
-      "mappedBy": "comment"
-    },
     "blog": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::blog.blog",
       "inversedBy": "comments"
+    },
+    "replied_comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::replied-comment.replied-comment",
+      "mappedBy": "comment"
     }
   }
 }
