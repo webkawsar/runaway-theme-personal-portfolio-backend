@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   upload: {
     config: {
       provider: 'cloudinary',
@@ -15,18 +14,22 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // email: {
-  //   config: {
-  //     provider: 'mailgun',
-  //     providerOptions: {
-  //       key: env('MAILGUN_API_KEY'), // Required
-  //       domain: env('MAILGUN_DOMAIN'), // Required
-  //     },
-  //     settings: {
-  //       defaultFrom: 'web.kawsarahmed@gmail.com',
-  //       defaultReplyTo: 'web.kawsarahmed@gmail.com',
-  //     },
-  //   },
-  // },
-  // ...
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('SMTP_HOST', 'smtp.example.com'),
+        port: env('SMTP_PORT', 587),
+        auth: {
+          user: env('SMTP_USERNAME'),
+          pass: env('SMTP_PASSWORD'),
+        },
+        // ... any custom nodemailer options
+      },
+      settings: {
+        defaultFrom: process.env.SMTP_DEFAULT_EMAIL_FROM,
+        defaultReplyTo: process.env.SMTP_DEFAULT_EMAIL_REPLY_TO,
+      },
+    },
+  },
 });
